@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TapToRoute</string>
+    <string name="title_activity_maps">TapToRoute</string>
+    <array name="transpo_mode">
+        <item>Car</item>
+        <item>Public Transportation</item>
+    </array>
+</resources>
