@@ -1,12 +1,12 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 26
+    compileSdkVersion 33
     buildToolsVersion "26.0.1"
     defaultConfig {
         applicationId "com.thebitwisters.taptoroute"
         minSdkVersion 16
-        targetSdkVersion 26
+        targetSdkVersion 33
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -20,12 +20,12 @@ android {
 }
 
 dependencies {
-    compile 'com.android.volley:volley:1.0.0'
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+    implementation 'com.android.volley:volley:1.0.0'
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    compile 'com.android.support:appcompat-v7:26.+'
-    compile 'com.google.android.gms:play-services-maps:11.0.4'
-    testCompile 'junit:junit:4.12'
+    implementation 'com.android.support:appcompat-v7:33'
+    implementation 'com.google.android.gms:play-services-maps:11.0.4'
+    testImplementation 'junit:junit:4.12'
 }
